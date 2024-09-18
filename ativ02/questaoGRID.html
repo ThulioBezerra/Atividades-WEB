@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            display: grid;
+            grid-template-rows: auto 1fr auto;
+            grid-template-columns: 1fr 3fr 1fr;
+            grid-template-areas:
+                "header header header"
+                "leftAside section rightAside"
+                "footer footer footer";
+            height: 100vh;
+            margin: 0;
+            gap: 20px;
+            justify-content: center;
+            align-items: center;
+        }
+
+        header {
+            grid-area: header;
+            background-color: rgb(0, 140, 255);
+            color: white;
+            text-align: center;
+            padding: 20px;
+            width: 100%;
+        }
+
+        main {
+            grid-area: section;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        footer {
+            grid-area: footer;
+            text-align: center;
+            background-color: rgb(0, 140, 255);
+            color: white;
+            padding: 10px;
+            width: 100%;
+        }
+
+        #leftAside,
+        #rightAside {
+            background-color: rgba(89, 192, 240, 0.916);
+            border-radius: 10px;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+
+        #leftAside {
+            grid-area: leftAside;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 300px;
+
+        }
+
+        #rightAside {
+            grid-area: rightAside;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+            height: 300px;
+
+        }
+
+        section {
+            grid-area: section;
+            background-color: rgb(0, 140, 255);
+            border-radius: 10px;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        article {
+            margin-bottom: 20px;
+        }
+
+        button {
+            border: 2px solid rgb(255, 255, 255);
+            border-radius: 10px;
+            width: 50%;
+            background-color: transparent;
+            color: white;
+            padding: 5px;
+            cursor: pointer;
+        }
+
+        .perfil {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+        }
+
+        .perfis {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        LOGO
+    </header>
+
+    <main>
+        <section>
+            <article>O Layout GRID pode ser utilizado quando se há uma divisão clara</article>
+            <article>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum magni, laudantium pariatur
+                repellendus cum impedit veritatis iste distinctio neque aperiam minus quaerat soluta autem voluptate,
+                perferendis vel nulla dolorem quasi.</article>
+            <button>Aceitar termos</button>
+        </section>
+    </main>
+
+    <aside id="leftAside">
+        <p>Lorem ipsum dolor sit amet consectetur</p>
+    </aside>
+
+    <aside id="rightAside">
+        <div class="perfis">
+            <img class="perfil" src="./img/gato01.jpg" alt="Um gato maluco">
+            <span>Gato estranho</span>
+        </div>
+        <div class="perfis">
+            <img class="perfil" src="./img/gato02.jpg" alt="Um gato maluco">
+            <span>Gato estranho</span>
+        </div>
+        <div class="perfis">
+            <img class="perfil" src="./img/gato03.jpg" alt="Um gato maluco">
+            <span>Gato estranho</span>
+        </div>
+    </aside>
+    <footer>Teste Rodapé</footer>
+</body>
+
+</html>
