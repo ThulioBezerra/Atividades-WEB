@@ -48,8 +48,6 @@ ativ01/ │-- index.html │-- styles.css │-- script.js
    ```bash
    git clone https://github.com/seu-usuario/programacao-web-atividades.git
 Navegue até a pasta da atividade desejada:
-bash
-Copiar código
 cd ativ01
 Abra o arquivo index.html no seu navegador.
 📌 Contribuição
