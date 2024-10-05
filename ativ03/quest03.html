@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quest 03</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main id="container">
+        <div id="consultacep">
+            <h1 id="title">Consulta CEP</h1>
+            <section>
+                <label for="cep" style="display: block; text-align: center;">Digite um CEP válido</label>
+                <input type="text" id="cep" placeholder="Digite o CEP aqui">
+                <button id="send">Enviar</button>
+            </section>
+            <div id="result" style="display: none;">
+                <h1 id="find">CEP ENCONTRADO!</h1>
+                <p id="cidade"></p>
+                <p id="logradouro"></p>
+                <p id="bairro"></p>
+                <p id="uf"></p>
+                <p id="gia"></p>
+                <p id="regiao"></p>
+                <p id="siafi"></p>
+                <p id="ddd"></p>
+                <p id="ibge"></p>
+            </div>
+            <p id="error" style="display: none;">CEP NÃO ENCONTRADO</p>
+        </div>
+    </main>
+    <script src="cep.js"></script>
+</body>
+
+</html>
