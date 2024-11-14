@@ -1,0 +1,37 @@
+@base_url = http://localhost:3000
+# @name get-animes-all
+GET {{base_url}}/api/animes
+
+###
+
+# @name get-animes-by-id
+GET {{base_url}}/api/animes/1
+
+### 
+
+# @name create-new-anime
+POST {{base_url}}/api/animes
+Content-Type: application/json
+
+{
+    "name": "1",
+    "genre": "Action, Comedy",
+    "studio": "WIT"
+}
+
+### 
+
+# @name update-an-anime
+PUT {{base_url}}/api/animes/10
+Content-Type: application/json
+
+{
+    "name": "Update",
+    "genre": "Adventure",
+    "studio": "WIT"
+}
+
+### 
+
+# @name delete-an-anime
+DELETE {{base_url}}/api/animes/5

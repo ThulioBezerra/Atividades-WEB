@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "name": "Update",
+    "genre": "Adventure",
+    "studio": "WIT"
+  },
+  {
+    "id": 2,
+    "name": "Parasyte",
+    "genre": "Horror, Sci-Fi",
+    "studio": "Madhouse"
+  },
+  {
+    "id": 3,
+    "name": "Demon Slayer",
+    "genre": "Action, Adventure, Dark Fantasy",
+    "studio": "Ufotable"
+  },
+  {
+    "id": 4,
+    "name": "Jujutsu Kaisen",
+    "genre": "Action, Supernatural",
+    "studio": "MAPPA"
+  },
+  {
+    "id": 6,
+    "name": "1",
+    "genre": "Action, Comedy",
+    "studio": "WIT"
+  }
+]
